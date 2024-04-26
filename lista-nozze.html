@@ -1,0 +1,1030 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="it-IT"><head>
+	<div class="fit-vids-style">&shy;<style> .fluid-width-video-wrapper { width: 100%; position: relative; padding: 0; } .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } </style></div><base href="https://www.lalunachevuoi.it/Templates/Clear/">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="author" content="SemiColonWeb">
+
+    <!-- Stylesheets
+    ============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/dark.css" type="text/css">
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]>
+    	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <!-- External JavaScripts
+    ============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+
+<script>
+
+function Add2Basket(wlid, nop)
+{
+
+   //alert (wlid + " " + nop);
+   if (nop == 99999)
+   { offlib = document.getElementById("offlibera" + wlid).value
+     //alert (offlib);
+
+
+
+	var n = offlib.indexOf(".");
+    var nn = offlib.indexOf(",");
+
+	 var nnn = n+nn;
+
+	 if( !/^[0-9]+$/.test(offlib ) )
+      //if (nnn>0||isNaN(offlib))
+	  {
+
+		 alert ("Ti preghiamo di specificare una cifra tonda senza decimali e senza alcuna altra lettera");
+	   return;
+      }
+
+	 if (offlib=="")
+	 {
+	   alert ("Ti preghiamo di specificare un ammontare per l'offerta libera");
+	   return;
+	 }
+
+   }
+   else
+   {
+
+     offlib = 0;
+   }
+
+   document.getElementById('forma'+wlid).submit();
+
+
+   return;
+
+
+   //document.location = "AddToBasket.php?wlid=" + wlid + "&tiporichiesta999=add&offlibera=" + offlib;
+   /*      //window.location.href = "https://www.lalunachevuoi.it/lista-viaggio-nozze/it/regala/"+ wlid + "/"+ offlib+"/add?tokn=ichqs1j8av9ddo5tvkt5igdba3";
+	  window.location.href = "../../lista-viaggio-nozze/it/regala/"+ wlid + "/"+ offlib+"/add";
+   */
+}
+
+function ToggleDescription(id)
+{
+
+   var status = document.getElementById(id).style.display;
+   if (status=='none')
+   {document.getElementById(id).style.display='block';}
+   else
+   	{document.getElementById(id).style.display='none';}
+
+
+}
+
+
+</script>    <!-- Document Title
+    ============================================= -->
+	<title>Sito Web e Lista Nozze | Lalunachevuoi</title>
+
+
+<script>
+function SwitchLanguage()
+	{
+		var lang= document.getElementById("lingua").value;
+		var newurl;
+		switch(lang)
+		{
+		case "it":
+			newurl = "https://www.lalunachevuoi.it/lista-viaggio-nozze/it/listanozze";
+			break;
+		case "en":
+			newurl = "https://www.lalunachevuoi.it/lista-viaggio-nozze/en/listanozze";
+			break;
+		}
+		document.location = newurl;
+	}
+</script>
+
+
+</head>
+
+<body class="stretched device-xs">
+<div id="backtoesempi" style="position:fixed; top:200px; z-index:10000;  left:0px; padding:15px; background:#fff; opacity:0.7; border-bottom-right-radius:8px; border-top-right-radius:8px; border:#ccc thin solid"><a href="https://www.lalunachevuoi.it/esempi-lista-nozze/">Torna agli esempi</a>
+</div>
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix" style="animation-duration: 1.5s; opacity: 1;">
+
+        <!-- Header
+        ============================================= -->
+        <header id="header" class="transparent-header semi-transparent full-header" data-sticky-class="not-dark">
+
+            <div id="header-wrap" class="">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo">
+                                                 <a href="https://www.lalunachevuoi.it/" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
+                        <a href="https://www.lalunachevuoi.it/" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
+                                        </div><!-- #logo end -->
+
+                    <!-- Language switch
+                    ============================================= -->
+                    <div id="top-search" class="languageswitcher">
+                        <p align="center">
+                            <select class="form-control language" id="lingua" onchange="SwitchLanguage()" style="max-width:150px; background-color:transparent">
+                                <option value="it" selected="selected">IT</option>
+                                <option value="en">EN</option>
+                            </select>
+                        </p>
+
+                    </div><!-- #language end -->
+
+                    <!-- Primary Navigation
+                    ============================================= -->
+                    <nav id="primary-menu">
+					<ul class="sf-js-enabled" style="touch-action: pan-y;">
+     <li><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/home?demo=1">Home</a></li>
+
+
+     <li class="current"><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/listanozze?demo=1">Lista Nozze</a></li>
+
+
+     <li><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/eventi?demo=1">Eventi</a></li>
+
+
+     <li><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/pagine/RSVP?demo=1">RSVP</a></li>
+
+
+     <li><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/hotels?demo=1">Hotel</a></li>
+
+	<li class="sub-menu"><a href="#" style="pointer-events: none" class="sf-with-ul">Altro</a><ul style="display: none;">
+     <li><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/fotosposi?demo=1">Galleria</a></li>
+
+
+     <li><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/lunablog?demo=1">Blog</a></li>
+
+	</ul></li>   </ul>
+
+
+
+
+
+                        <!-- Top Search
+                        ============================================= -->
+                        <!--<div id="top-search">
+                            <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+                            <form action="search.html" method="get">
+                                <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+                            </form>
+                        </div><!-- #top-search end -->
+
+                    </nav><!-- #primary-menu end -->
+
+                </div>
+
+            </div>
+
+        </header><!-- #header end -->
+
+        <!-- Page Title
+        ============================================= -->
+                  <section id="page-title" class="page-title-parallax page-title-dark" style="padding: 250px 0px; background-image: url(&quot;https://www.lalunachevuoi.it/UserDocuments/wedding101/Layout-pagina/Clear/pagesimg/Lista-nozze-online__1481908390.jpg&quot;); background-size: cover; background-position: 50% -40px;" data-stellar-background-ratio="0.4">
+
+         <div class="container clearfix" style="padding:180px">
+
+         </div>
+
+
+        </section><!-- #page-title end -->
+
+        <!-- Content
+        ============================================= -->
+        <div id="listanozze"></div>		<section id="content">
+
+            <div class="content-wrap">
+
+				<h1 style="text-align:center">Lista Nozze</h1>
+
+                                <div class="section footer-stick" style="background-color:#FFF; margin-top:20px; padding-top:0px; padding-bottom:80px">
+
+                    <!--<h4 class="uppercase center">
+                   La nostra <span>lista nozze</span>                    </h4>-->
+
+                    <div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+                        <div class="flexslider" style="height: 115px;">
+                            <div class="slider-wrap">
+                                <div class="slide flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+                                    <!--<div class="testi-image">
+                                        <a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+                                    </div>-->
+                                    <div class="testi-content" style="font-style:normal !important; font-family:'Lato', sans-serif !important">
+                                        <p>Inserire un messaggio da far apparire sopra la lista nozze/lista regalo</p>
+                                                                                <div class="testi-meta">
+                                            Nicola &amp; Luna                                            <!--<span>Gli Sposi</span> -->
+                                        </div>
+                                                                            </div>
+                                </div>
+
+                            </div>
+                        <ol class="flex-control-nav flex-control-paging"></ol></div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="container clearfix">
+
+
+				 <div class="row">
+
+					<!--<div class="container-fluid">-->
+  <!-- <ul class="row">-->
+
+
+
+                            <form style="display:inline" id="forma867" action="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/regala/" method="post" enctype="multipart/form-data">
+
+
+
+
+
+          <input type="hidden" name="wlid" value="867">
+          <input type="hidden" name="tiporichiesta999" value="add">
+           <input type="hidden" name="lang" value="it">
+           <input type="hidden" name="currentpage" value="listanozze">
+          <input type="hidden" name="folder" value="lista-viaggio-nozze">
+
+
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+             <div class="thumbnail" style="height:420px; overflow:hidden; max-width:280px; margin:auto; margin-bottom:15px;">
+				  <div style="margin:auto; width:100%; height:180px; overflow:hidden; position:relative;  background-repeat: no-repeat; background-position: 45px 13px;  background-size:170px auto; background-image:url(https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456305780.jpg)" class="text-center">
+					<!--<img src="https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456305780.jpg" alt="regalo lista nozze">-->
+                                        <img src="https://www.lalunachevuoi.it/Images/Structure/regalato.png" style="position:absolute; top:-1px; left:-2px; z-index:10">
+				                      </div>
+				  <div class="caption">
+					  <div>
+					   <div class="text-center" style="position:relative; min-height:50px"><strong>Brindisi in volo</strong>
+					   <!--<a href="#demo867" data-toggle="collapse">-->
+					   					   <a style="cursor:pointer" onclick="ToggleDescription('demo867')" )="">
+					   <!--<span style="margin-left:10px" id="chevronvisi1" class="glyphicon glyphicon-chevron-down"></span>-->&nbsp;+</a>
+
+							<!--<div id="demo867" class="collapse" >
+							Drinks in volo...possibilmente champagne. E' la nostra luna di miele dopotutto!
+							</div>-->
+
+							<div id="demo867" style="position:absolute; top:20px; left:0px; padding:5px; background:#fff; display:none; z-index:10; border:#CCC thin solid; width:100%">
+							Drinks in volo...possibilmente champagne. E' la nostra luna di miele dopotutto!
+<br><div style="text-align:right"> <a style="cursor:pointer" onclick="ToggleDescription('demo867')" )="">X</a></div>
+							</div>
+					   					   <br></div>
+					   					   <h4 class="text-center">€&nbsp; 150</h4>
+						   <div class="text-center">Quote<br>
+						   Regalate: 1<br>
+						   Richieste: 1						   </div>
+
+
+
+					  					  </div>
+					  					 <!--<script>
+						jQuery(document).ready(function(){
+							jQuery('[data-toggle="popover"]').popover();
+						});
+					 </script>-->
+
+				  </div>
+              </div>
+
+             </div>
+              </form>
+                              <form style="display:inline" id="forma882" action="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/regala/" method="post" enctype="multipart/form-data">
+
+
+
+
+
+          <input type="hidden" name="wlid" value="882">
+          <input type="hidden" name="tiporichiesta999" value="add">
+           <input type="hidden" name="lang" value="it">
+           <input type="hidden" name="currentpage" value="listanozze">
+          <input type="hidden" name="folder" value="lista-viaggio-nozze">
+
+
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+             <div class="thumbnail" style="height:420px; overflow:hidden; max-width:280px; margin:auto; margin-bottom:15px;">
+				  <div style="margin:auto; width:100%; height:180px; overflow:hidden; position:relative;  background-repeat: no-repeat; background-position: -122px 0px;  background-size:410px auto; background-image:url(https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456305752.jpg)" class="text-center">
+					<!--<img src="https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456305752.jpg" alt="regalo lista nozze">-->
+                                        <img src="https://www.lalunachevuoi.it/Images/Structure/regalato.png" style="position:absolute; top:-1px; left:-2px; z-index:10">
+				                      </div>
+				  <div class="caption">
+					  <div>
+					   <div class="text-center" style="position:relative; min-height:50px"><strong>Contributo voli Milano-Malè e ritorno</strong>
+					   <!--<a href="#demo882" data-toggle="collapse">-->
+					   					   <a style="cursor:pointer" onclick="ToggleDescription('demo882')" )="">
+					   <!--<span style="margin-left:10px" id="chevronvisi1" class="glyphicon glyphicon-chevron-down"></span>-->&nbsp;+</a>
+
+							<!--<div id="demo882" class="collapse" >
+							Voli verso la meta da paradiso							</div>-->
+
+							<div id="demo882" style="position:absolute; top:20px; left:0px; padding:5px; background:#fff; display:none; z-index:10; border:#CCC thin solid; width:100%">
+							Voli verso la meta da paradiso<br><div style="text-align:right"> <a style="cursor:pointer" onclick="ToggleDescription('demo882')" )="">X</a></div>
+							</div>
+					   					   <br></div>
+					   					   <h4 class="text-center">€&nbsp; 700</h4>
+						   <div class="text-center">Quote<br>
+						   Regalate: 1<br>
+						   Richieste: 1						   </div>
+
+
+
+					  					  </div>
+					  					 <!--<script>
+						jQuery(document).ready(function(){
+							jQuery('[data-toggle="popover"]').popover();
+						});
+					 </script>-->
+
+				  </div>
+              </div>
+
+             </div>
+              </form>
+                              <form style="display:inline" id="forma868" action="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/regala/" method="post" enctype="multipart/form-data">
+
+
+
+
+
+          <input type="hidden" name="wlid" value="868">
+          <input type="hidden" name="tiporichiesta999" value="add">
+           <input type="hidden" name="lang" value="it">
+           <input type="hidden" name="currentpage" value="listanozze">
+          <input type="hidden" name="folder" value="lista-viaggio-nozze">
+
+
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+             <div class="thumbnail" style="height:420px; overflow:hidden; max-width:280px; margin:auto; margin-bottom:15px;">
+				  <div style="margin:auto; width:100%; height:180px; overflow:hidden; position:relative;  background-repeat: no-repeat; background-position: -5px -1px;  background-image:url(https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456306050.jpg)" class="text-center">
+					<!--<img src="https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456306050.jpg" alt="regalo lista nozze">-->
+                                        <img src="https://www.lalunachevuoi.it/Images/Structure/regalato.png" style="position:absolute; top:-1px; left:-2px; z-index:10">
+				                      </div>
+				  <div class="caption">
+					  <div>
+					   <div class="text-center" style="position:relative; min-height:50px"><strong>Trasferimento</strong>
+					   <!--<a href="#demo868" data-toggle="collapse">-->
+					   					   <a style="cursor:pointer" onclick="ToggleDescription('demo868')" )="">
+					   <!--<span style="margin-left:10px" id="chevronvisi1" class="glyphicon glyphicon-chevron-down"></span>-->&nbsp;+</a>
+
+							<!--<div id="demo868" class="collapse" >
+							Trasferimento in barca fino all'atollo di Nalaguraidhoo South Ari							</div>-->
+
+							<div id="demo868" style="position:absolute; top:20px; left:0px; padding:5px; background:#fff; display:none; z-index:10; border:#CCC thin solid; width:100%">
+							Trasferimento in barca fino all'atollo di Nalaguraidhoo South Ari<br><div style="text-align:right"> <a style="cursor:pointer" onclick="ToggleDescription('demo868')" )="">X</a></div>
+							</div>
+					   					   <br></div>
+					   					   <h4 class="text-center">€&nbsp; 80</h4>
+						   <div class="text-center">Quote<br>
+						   Regalate: 1<br>
+						   Richieste: 1						   </div>
+
+
+
+					  					  </div>
+					  					 <!--<script>
+						jQuery(document).ready(function(){
+							jQuery('[data-toggle="popover"]').popover();
+						});
+					 </script>-->
+
+				  </div>
+              </div>
+
+             </div>
+              </form>
+                              <form style="display:inline" id="forma869" action="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/regala/" method="post" enctype="multipart/form-data">
+
+
+
+
+
+          <input type="hidden" name="wlid" value="869">
+          <input type="hidden" name="tiporichiesta999" value="add">
+           <input type="hidden" name="lang" value="it">
+           <input type="hidden" name="currentpage" value="listanozze">
+          <input type="hidden" name="folder" value="lista-viaggio-nozze">
+
+
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+             <div class="thumbnail" style="height:420px; overflow:hidden; max-width:280px; margin:auto; margin-bottom:15px;">
+				  <div style="margin:auto; width:100%; height:180px; overflow:hidden; position:relative;  background-repeat: no-repeat; background-position: 0px -6px;  background-image:url(https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456306081.jpg)" class="text-center">
+					<!--<img src="https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456306081.jpg" alt="regalo lista nozze">-->
+                                      </div>
+				  <div class="caption">
+					  <div>
+					   <div class="text-center" style="position:relative; min-height:50px"><strong>Hotel</strong>
+					   <!--<a href="#demo869" data-toggle="collapse">-->
+					   					   <a style="cursor:pointer" onclick="ToggleDescription('demo869')" )="">
+					   <!--<span style="margin-left:10px" id="chevronvisi1" class="glyphicon glyphicon-chevron-down"></span>-->&nbsp;+</a>
+
+							<!--<div id="demo869" class="collapse" >
+							Soggiorno nel fantastico Villa Hotels Paradise Island Resort 							</div>-->
+
+							<div id="demo869" style="position:absolute; top:20px; left:0px; padding:5px; background:#fff; display:none; z-index:10; border:#CCC thin solid; width:100%">
+							Soggiorno nel fantastico Villa Hotels Paradise Island Resort <br><div style="text-align:right"> <a style="cursor:pointer" onclick="ToggleDescription('demo869')" )="">X</a></div>
+							</div>
+					   					   <br></div>
+					   <div class="text-center"><input style="width:100%" name="offlibera" id="offlibera869" type="text"><br>Inserisci importo da regalare</div><br>
+
+						  <!-- <h4 class="text-center">&#8364;</h4>-->
+
+
+
+
+					  					  </div>
+					  						 <div style="text-align:center; margin-top:10px; width:100%">
+						   <a onmouseover="this.style.cursor='pointer'" onclick="Add2Basket(869,99999)">Regala</a>						 </div>
+					 					 <!--<script>
+						jQuery(document).ready(function(){
+							jQuery('[data-toggle="popover"]').popover();
+						});
+					 </script>-->
+
+				  </div>
+              </div>
+
+             </div>
+              </form>
+                              <form style="display:inline" id="forma870" action="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/regala/" method="post" enctype="multipart/form-data">
+
+
+
+
+
+          <input type="hidden" name="wlid" value="870">
+          <input type="hidden" name="tiporichiesta999" value="add">
+           <input type="hidden" name="lang" value="it">
+           <input type="hidden" name="currentpage" value="listanozze">
+          <input type="hidden" name="folder" value="lista-viaggio-nozze">
+
+
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+             <div class="thumbnail" style="height:420px; overflow:hidden; max-width:280px; margin:auto; margin-bottom:15px;">
+				  <div style="margin:auto; width:100%; height:180px; overflow:hidden; position:relative;  background-repeat: no-repeat; background-position: -4px -19px;  background-image:url(https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456306113.jpg)" class="text-center">
+					<!--<img src="https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456306113.jpg" alt="regalo lista nozze">-->
+                                        <img src="https://www.lalunachevuoi.it/Images/Structure/regalato.png" style="position:absolute; top:-1px; left:-2px; z-index:10">
+				                      </div>
+				  <div class="caption">
+					  <div>
+					   <div class="text-center" style="position:relative; min-height:50px"><strong>Escursione</strong>
+					   <!--<a href="#demo870" data-toggle="collapse">-->
+					   					   <a style="cursor:pointer" onclick="ToggleDescription('demo870')" )="">
+					   <!--<span style="margin-left:10px" id="chevronvisi1" class="glyphicon glyphicon-chevron-down"></span>-->&nbsp;+</a>
+
+							<!--<div id="demo870" class="collapse" >
+							Un escursione in barca attorno all'isola. Non vediamo l'ora...
+ 							</div>-->
+
+							<div id="demo870" style="position:absolute; top:20px; left:0px; padding:5px; background:#fff; display:none; z-index:10; border:#CCC thin solid; width:100%">
+							Un escursione in barca attorno all'isola. Non vediamo l'ora...
+ <br><div style="text-align:right"> <a style="cursor:pointer" onclick="ToggleDescription('demo870')" )="">X</a></div>
+							</div>
+					   					   <br></div>
+					   					   <h4 class="text-center">€&nbsp; 150</h4>
+						   <div class="text-center">Quote<br>
+						   Regalate: 1<br>
+						   Richieste: 1						   </div>
+
+
+
+					  					  </div>
+					  					 <!--<script>
+						jQuery(document).ready(function(){
+							jQuery('[data-toggle="popover"]').popover();
+						});
+					 </script>-->
+
+				  </div>
+              </div>
+
+             </div>
+              </form>
+                              <form style="display:inline" id="forma872" action="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/regala/" method="post" enctype="multipart/form-data">
+
+
+
+
+
+          <input type="hidden" name="wlid" value="872">
+          <input type="hidden" name="tiporichiesta999" value="add">
+           <input type="hidden" name="lang" value="it">
+           <input type="hidden" name="currentpage" value="listanozze">
+          <input type="hidden" name="folder" value="lista-viaggio-nozze">
+
+
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+             <div class="thumbnail" style="height:420px; overflow:hidden; max-width:280px; margin:auto; margin-bottom:15px;">
+				  <div style="margin:auto; width:100%; height:180px; overflow:hidden; position:relative;  background-repeat: no-repeat; background-position: -10px -1px;  background-image:url(https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456306137.jpg)" class="text-center">
+					<!--<img src="https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456306137.jpg" alt="regalo lista nozze">-->
+                                        <img src="https://www.lalunachevuoi.it/Images/Structure/regalato.png" style="position:absolute; top:-1px; left:-2px; z-index:10">
+				                      </div>
+				  <div class="caption">
+					  <div>
+					   <div class="text-center" style="position:relative; min-height:50px"><strong>Scuba</strong>
+					   <!--<a href="#demo872" data-toggle="collapse">-->
+					   					   <a style="cursor:pointer" onclick="ToggleDescription('demo872')" )="">
+					   <!--<span style="margin-left:10px" id="chevronvisi1" class="glyphicon glyphicon-chevron-down"></span>-->&nbsp;+</a>
+
+							<!--<div id="demo872" class="collapse" >
+							Una delle attività più belle da queste parti...prenderemo lezioni e ci immergeremo nelle acque turchesi 							</div>-->
+
+							<div id="demo872" style="position:absolute; top:20px; left:0px; padding:5px; background:#fff; display:none; z-index:10; border:#CCC thin solid; width:100%">
+							Una delle attività più belle da queste parti...prenderemo lezioni e ci immergeremo nelle acque turchesi <br><div style="text-align:right"> <a style="cursor:pointer" onclick="ToggleDescription('demo872')" )="">X</a></div>
+							</div>
+					   					   <br></div>
+					   					   <h4 class="text-center">€&nbsp; 200</h4>
+						   <div class="text-center">Quote<br>
+						   Regalate: 1<br>
+						   Richieste: 1						   </div>
+
+
+
+					  					  </div>
+					  					 <!--<script>
+						jQuery(document).ready(function(){
+							jQuery('[data-toggle="popover"]').popover();
+						});
+					 </script>-->
+
+				  </div>
+              </div>
+
+             </div>
+              </form>
+                              <form style="display:inline" id="forma883" action="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/regala/" method="post" enctype="multipart/form-data">
+
+
+
+
+
+          <input type="hidden" name="wlid" value="883">
+          <input type="hidden" name="tiporichiesta999" value="add">
+           <input type="hidden" name="lang" value="it">
+           <input type="hidden" name="currentpage" value="listanozze">
+          <input type="hidden" name="folder" value="lista-viaggio-nozze">
+
+
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+             <div class="thumbnail" style="height:420px; overflow:hidden; max-width:280px; margin:auto; margin-bottom:15px;">
+				  <div style="margin:auto; width:100%; height:180px; overflow:hidden; position:relative;  background-repeat: no-repeat; background-position: -20px 0px;  background-image:url(https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456306155.jpg)" class="text-center">
+					<!--<img src="https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456306155.jpg" alt="regalo lista nozze">-->
+                                        <img src="https://www.lalunachevuoi.it/Images/Structure/regalato.png" style="position:absolute; top:-1px; left:-2px; z-index:10">
+				                      </div>
+				  <div class="caption">
+					  <div>
+					   <div class="text-center" style="position:relative; min-height:50px"><strong>Mini crociera maldiviana</strong>
+					   <!--<a href="#demo883" data-toggle="collapse">-->
+					   					   <a style="cursor:pointer" onclick="ToggleDescription('demo883')" )="">
+					   <!--<span style="margin-left:10px" id="chevronvisi1" class="glyphicon glyphicon-chevron-down"></span>-->&nbsp;+</a>
+
+							<!--<div id="demo883" class="collapse" >
+							Ci imbarcheremo sulla Belle Boat per 3 giorni di crociera attorno all'arcipelago.							</div>-->
+
+							<div id="demo883" style="position:absolute; top:20px; left:0px; padding:5px; background:#fff; display:none; z-index:10; border:#CCC thin solid; width:100%">
+							Ci imbarcheremo sulla Belle Boat per 3 giorni di crociera attorno all'arcipelago.<br><div style="text-align:right"> <a style="cursor:pointer" onclick="ToggleDescription('demo883')" )="">X</a></div>
+							</div>
+					   					   <br></div>
+					   					   <h4 class="text-center">€&nbsp; 450</h4>
+						   <div class="text-center">Quote<br>
+						   Regalate: 1<br>
+						   Richieste: 1						   </div>
+
+
+
+					  					  </div>
+					  					 <!--<script>
+						jQuery(document).ready(function(){
+							jQuery('[data-toggle="popover"]').popover();
+						});
+					 </script>-->
+
+				  </div>
+              </div>
+
+             </div>
+              </form>
+                              <form style="display:inline" id="forma874" action="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/regala/" method="post" enctype="multipart/form-data">
+
+
+
+
+
+          <input type="hidden" name="wlid" value="874">
+          <input type="hidden" name="tiporichiesta999" value="add">
+           <input type="hidden" name="lang" value="it">
+           <input type="hidden" name="currentpage" value="listanozze">
+          <input type="hidden" name="folder" value="lista-viaggio-nozze">
+
+
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+             <div class="thumbnail" style="height:420px; overflow:hidden; max-width:280px; margin:auto; margin-bottom:15px;">
+				  <div style="margin:auto; width:100%; height:180px; overflow:hidden; position:relative;  background-repeat: no-repeat; background-position: -9px -8px;  background-size:565px auto; background-image:url(https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456306173.jpg)" class="text-center">
+					<!--<img src="https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456306173.jpg" alt="regalo lista nozze">-->
+                                      </div>
+				  <div class="caption">
+					  <div>
+					   <div class="text-center" style="position:relative; min-height:50px"><strong>Cocktails a bordo</strong>
+					   <!--<a href="#demo874" data-toggle="collapse">-->
+					   					   <a style="cursor:pointer" onclick="ToggleDescription('demo874')" )="">
+					   <!--<span style="margin-left:10px" id="chevronvisi1" class="glyphicon glyphicon-chevron-down"></span>-->&nbsp;+</a>
+
+							<!--<div id="demo874" class="collapse" >
+							Per non fraci mancare proprio nulla!
+							</div>-->
+
+							<div id="demo874" style="position:absolute; top:20px; left:0px; padding:5px; background:#fff; display:none; z-index:10; border:#CCC thin solid; width:100%">
+							Per non fraci mancare proprio nulla!
+<br><div style="text-align:right"> <a style="cursor:pointer" onclick="ToggleDescription('demo874')" )="">X</a></div>
+							</div>
+					   					   <br></div>
+					   <div class="text-center"><input style="width:100%" name="offlibera" id="offlibera874" type="text"><br>Inserisci importo da regalare</div><br>
+
+						  <!-- <h4 class="text-center">&#8364;</h4>-->
+
+
+
+
+					  					  </div>
+					  						 <div style="text-align:center; margin-top:10px; width:100%">
+						   <a onmouseover="this.style.cursor='pointer'" onclick="Add2Basket(874,99999)">Regala</a>						 </div>
+					 					 <!--<script>
+						jQuery(document).ready(function(){
+							jQuery('[data-toggle="popover"]').popover();
+						});
+					 </script>-->
+
+				  </div>
+              </div>
+
+             </div>
+              </form>
+                              <form style="display:inline" id="forma875" action="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/regala/" method="post" enctype="multipart/form-data">
+
+
+
+
+
+          <input type="hidden" name="wlid" value="875">
+          <input type="hidden" name="tiporichiesta999" value="add">
+           <input type="hidden" name="lang" value="it">
+           <input type="hidden" name="currentpage" value="listanozze">
+          <input type="hidden" name="folder" value="lista-viaggio-nozze">
+
+
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+             <div class="thumbnail" style="height:420px; overflow:hidden; max-width:280px; margin:auto; margin-bottom:15px;">
+				  <div style="margin:auto; width:100%; height:180px; overflow:hidden; position:relative;  background-repeat: no-repeat; background-position: -125px -1px;  background-size:395px auto; background-image:url(https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456318386.jpg)" class="text-center">
+					<!--<img src="https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456318386.jpg" alt="regalo lista nozze">-->
+                                        <img src="https://www.lalunachevuoi.it/Images/Structure/regalato.png" style="position:absolute; top:-1px; left:-2px; z-index:10">
+				                      </div>
+				  <div class="caption">
+					  <div>
+					   <div class="text-center" style="position:relative; min-height:50px"><strong>Ultima notte a Malè</strong>
+					   <!--<a href="#demo875" data-toggle="collapse">-->
+					   					   <a style="cursor:pointer" onclick="ToggleDescription('demo875')" )="">
+					   <!--<span style="margin-left:10px" id="chevronvisi1" class="glyphicon glyphicon-chevron-down"></span>-->&nbsp;+</a>
+
+							<!--<div id="demo875" class="collapse" >
+							Albergo 5 stelle a Male per godersi un po' di buon trattamento fino in fondo 							</div>-->
+
+							<div id="demo875" style="position:absolute; top:20px; left:0px; padding:5px; background:#fff; display:none; z-index:10; border:#CCC thin solid; width:100%">
+							Albergo 5 stelle a Male per godersi un po' di buon trattamento fino in fondo <br><div style="text-align:right"> <a style="cursor:pointer" onclick="ToggleDescription('demo875')" )="">X</a></div>
+							</div>
+					   					   <br></div>
+					   					   <h4 class="text-center">€&nbsp; 450</h4>
+						   <div class="text-center">Quote<br>
+						   Regalate: 1<br>
+						   Richieste: 1						   </div>
+
+
+
+					  					  </div>
+					  					 <!--<script>
+						jQuery(document).ready(function(){
+							jQuery('[data-toggle="popover"]').popover();
+						});
+					 </script>-->
+
+				  </div>
+              </div>
+
+             </div>
+              </form>
+                              <form style="display:inline" id="forma931" action="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/regala/" method="post" enctype="multipart/form-data">
+
+
+
+
+
+          <input type="hidden" name="wlid" value="931">
+          <input type="hidden" name="tiporichiesta999" value="add">
+           <input type="hidden" name="lang" value="it">
+           <input type="hidden" name="currentpage" value="listanozze">
+          <input type="hidden" name="folder" value="lista-viaggio-nozze">
+
+
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+             <div class="thumbnail" style="height:420px; overflow:hidden; max-width:280px; margin:auto; margin-bottom:15px;">
+				  <div style="margin:auto; width:100%; height:180px; overflow:hidden; position:relative;  background-repeat: no-repeat; background-position: 7px 13px;  background-size:245px auto; background-image:url(https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456318432.jpg)" class="text-center">
+					<!--<img src="https://www.lalunachevuoi.it/UserDocuments/wedding101/PicList/Medium/Immagine-lista-nozze_1456318432.jpg" alt="regalo lista nozze">-->
+                                      </div>
+				  <div class="caption">
+					  <div>
+					   <div class="text-center" style="position:relative; min-height:50px"><strong>Oggettistica per il viaggio</strong>
+					   <!--<a href="#demo931" data-toggle="collapse">-->
+					   					   <a style="cursor:pointer" onclick="ToggleDescription('demo931')" )="">
+					   <!--<span style="margin-left:10px" id="chevronvisi1" class="glyphicon glyphicon-chevron-down"></span>-->&nbsp;+</a>
+
+							<!--<div id="demo931" class="collapse" >
+							Macchina fotografica, valigie...							</div>-->
+
+							<div id="demo931" style="position:absolute; top:20px; left:0px; padding:5px; background:#fff; display:none; z-index:10; border:#CCC thin solid; width:100%">
+							Macchina fotografica, valigie...<br><div style="text-align:right"> <a style="cursor:pointer" onclick="ToggleDescription('demo931')" )="">X</a></div>
+							</div>
+					   					   <br></div>
+					   <div class="text-center"><input style="width:100%" name="offlibera" id="offlibera931" type="text"><br>Inserisci importo da regalare</div><br>
+
+						  <!-- <h4 class="text-center">&#8364;</h4>-->
+
+
+
+
+					  					  </div>
+					  						 <div style="text-align:center; margin-top:10px; width:100%">
+						   <a onmouseover="this.style.cursor='pointer'" onclick="Add2Basket(931,99999)">Regala</a>						 </div>
+					 					 <!--<script>
+						jQuery(document).ready(function(){
+							jQuery('[data-toggle="popover"]').popover();
+						});
+					 </script>-->
+
+				  </div>
+              </div>
+
+             </div>
+              </form>
+
+
+     <!--</ul>-->
+<!--</div>-->
+<script>
+//$(document).ready(function(){
+    //$('[data-toggle="tooltippo"]').tooltip();
+//});
+</script>
+
+				</div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+        ============================================= -->
+        <footer id="footer" class="dark">
+
+            <div class="container">
+
+                <!-- Footer Widgets
+                ============================================= -->
+                <!--<div class="footer-widgets-wrap clearfix">
+
+                    <div class="col_two_third">
+
+                        <div class="col_one_third">
+
+                            <div class="widget clearfix">
+
+                                <img src="images/footer-widget-logo.png" alt="" class="footer-logo">
+
+                                <p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
+
+                                <div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+                                    <address>
+                                        <strong>Headquarters:</strong><br>
+                                        795 Folsom Ave, Suite 600<br>
+                                        San Francisco, CA 94107<br>
+                                    </address>
+                                    <abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
+                                    <abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>
+                                    <abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col_one_third">
+
+                            <div class="widget widget_links clearfix">
+
+                                <h4>Blogroll</h4>
+
+                                <ul>
+                                    <li><a href="http://codex.wordpress.org/">Documentation</a></li>
+                                    <li><a href="http://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
+                                    <li><a href="http://wordpress.org/extend/plugins/">Plugins</a></li>
+                                    <li><a href="http://wordpress.org/support/">Support Forums</a></li>
+                                    <li><a href="http://wordpress.org/extend/themes/">Themes</a></li>
+                                    <li><a href="http://wordpress.org/news/">WordPress Blog</a></li>
+                                    <li><a href="http://planet.wordpress.org/">WordPress Planet</a></li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col_one_third col_last">
+
+                            <div class="widget clearfix">
+                                <h4>Recent Posts</h4>
+
+                                <div id="post-list-footer">
+                                    <div class="spost clearfix">
+                                        <div class="entry-c">
+                                            <div class="entry-title">
+                                                <h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                            </div>
+                                            <ul class="entry-meta">
+                                                <li>10th July 2014</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="spost clearfix">
+                                        <div class="entry-c">
+                                            <div class="entry-title">
+                                                <h4><a href="#">Elit Assumenda vel amet dolorum quasi</a></h4>
+                                            </div>
+                                            <ul class="entry-meta">
+                                                <li>10th July 2014</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="spost clearfix">
+                                        <div class="entry-c">
+                                            <div class="entry-title">
+                                                <h4><a href="#">Debitis nihil placeat, illum est nisi</a></h4>
+                                            </div>
+                                            <ul class="entry-meta">
+                                                <li>10th July 2014</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col_one_third col_last">
+
+                        <div class="widget clearfix" style="margin-bottom: -20px;">
+
+                            <div class="row">
+
+                                <div class="col-md-6 bottommargin-sm">
+                                    <div class="counter counter-small"><span data-from="50" data-to="15065421" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
+                                    <h5 class="nobottommargin">Total Downloads</h5>
+                                </div>
+
+                                <div class="col-md-6 bottommargin-sm">
+                                    <div class="counter counter-small"><span data-from="100" data-to="18465" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
+                                    <h5 class="nobottommargin">Clients</h5>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="widget subscribe-widget clearfix">
+                            <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
+                            <div id="widget-subscribe-form-result" data-notify-type="success" data-notify-msg=""></div>
+                            <form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
+                                <div class="input-group divcenter">
+                                    <span class="input-group-addon"><i class="icon-email2"></i></span>
+                                    <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-success" type="submit">Subscribe</button>
+                                    </span>
+                                </div>
+                            </form>
+                            <script type="text/javascript">
+                                $("#widget-subscribe-form").validate({
+                                    submitHandler: function(form) {
+                                        $(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+                                        $(form).ajaxSubmit({
+                                            target: '#widget-subscribe-form-result',
+                                            success: function() {
+                                                $(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+                                                $('#widget-subscribe-form').find('.form-control').val('');
+                                                $('#widget-subscribe-form-result').attr('data-notify-msg', $('#widget-subscribe-form-result').html()).html('');
+                                                SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
+                                            }
+                                        });
+                                    }
+                                });
+                            </script>
+                        </div>
+
+                        <div class="widget clearfix" style="margin-bottom: -20px;">
+
+                            <div class="row">
+
+                                <div class="col-md-6 clearfix bottommargin-sm">
+                                    <a href="#" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">
+                                        <i class="icon-facebook"></i>
+                                        <i class="icon-facebook"></i>
+                                    </a>
+                                    <a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
+                                </div>
+                                <div class="col-md-6 clearfix">
+                                    <a href="#" class="social-icon si-dark si-colored si-rss nobottommargin" style="margin-right: 10px;">
+                                        <i class="icon-rss"></i>
+                                        <i class="icon-rss"></i>
+                                    </a>
+                                    <a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div><!-- .footer-widgets-wrap end -->
+
+            </div>
+
+            <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights">
+
+                <div class="container clearfix">
+
+                    <div class="col-xs-12">
+					<div class="text-center">
+                        <div class="row"><div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:10px"><strong><a target="_blank" href="https://www.lalunachevuoi.it">Lalunachevuoi.it</a></strong>, la scelta di Nicola e Luna per il loro matrimonio<!--<br>Per tutte le altre occasioni c'&egrave <a href='http://www.wishon.it'>WishOn.it</a>--></div><div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:10px; text-align:center"><strong>Supporto</strong><br><a>support@lalunachevuoi.it</a> </div></div>					</div>
+                    </div>
+
+
+
+                        <div class="clear"></div>
+
+                        <!--<i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +91-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> CanvasOnSkype-->
+                    </div>
+
+                </div>
+
+            </footer></div><!-- #copyrights end -->
+
+        <!-- #footer end -->
+
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up" style="display: none;"></div>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script type="text/javascript" src="js/functions.js"></script>
+
+
+<script>
+   //window.top.document.getElementById('mainloadergif').style.display='none';
+
+
+</script>
+</body></html>
