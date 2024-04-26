@@ -1,47 +1,344 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matrimonio di [Nome Sposi]</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        .info {
-            background-color: #fff;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-        p {
-            line-height: 1.6;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Benvenuti al Matrimonio di [Nome Sposi]</h1>
+<html dir="ltr" lang="it-IT"><head>
+<div class="fit-vids-style">­<style> .fluid-width-video-wrapper { width: 100%; position: relative; padding: 0; } .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } </style></div><base href="https://www.lalunachevuoi.it/Templates/Clear/">
 
-        <div class="info">
-            <h2>Informazioni sul Matrimonio</h2>
-            <p>Data: [Data del Matrimonio 3]</p>
-            <p>Ora: [Ora del Matrimonio]</p>
-            <p>Luogo: [Luogo del Matrimonio]</p>
-            <p>RSVP: [Informazioni per la Conferma di Partecipazione]</p>
-        </div>
-    </div>
-</body>
-</html>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="author" content="SemiColonWeb">
+
+    <!-- Stylesheets
+    ============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/dark.css" type="text/css">
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]>
+    	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <!-- External JavaScripts
+    ============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+    <!-- Document Title
+    ============================================= -->
+	<title>Sito Web e Lista Nozze | Lalunachevuoi</title>
+
+
+
+
+
+<script>
+function SwitchLanguage()
+	{
+		var lang= document.getElementById("lingua").value;
+		var newurl;
+		switch(lang)
+		{
+		case "it":
+			newurl = "https://www.lalunachevuoi.it/lista-viaggio-nozze/it/home";
+			break;
+		case "en":
+			newurl = "https://www.lalunachevuoi.it/lista-viaggio-nozze/en/home";
+			break;
+		}
+		document.location = newurl;
+	}
+
+
+/*function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+
+
+function showwelcome() {
+
+	var biscotti = getCookie("biscotti");
+
+	if (biscotti!="no")
+	{
+		document.getElementById("benvenutowndw").style.display="block";
+	}
+
+
+}
+
+function stopbenvenuto() {
+
+	var ctrl= document.getElementById("benvenutomostra");
+
+	if (ctrl.checked)
+		setCookie("biscotti", "no",1000);
+	else
+	  setCookie("biscotti", "si",1000);
+}	*/
+
+</script>
+
+
+<style>
+
+
+	#titolo1 { color: }
+	#testo1 { color: }
+
+</style>
+
+
+</head>
+
+<body class="stretched device-md">
+
+
+<div id="backtoesempi" style="position:fixed; top:200px; z-index:10000;  left:0px; padding:15px; background:#fff; opacity:0.7; border-bottom-right-radius:8px; border-top-right-radius:8px; border:#ccc thin solid"><a href="https://www.lalunachevuoi.it/esempi-lista-nozze/">Torna agli esempi</a>
+</div>
+
+<!--<div  style="position: absolute; z-index:100; top:30%; width:100%; display:none" id="benvenutowndw">
+<div style="opacity:0.9; padding:40px;  background-color:#fff;  margin:auto; max-width:500px; font-size:16px">
+ <p>Questo è il layout standard scelto per te da Lalunachevuoi. Se vuoi cambiarlo accedi al tuo account, vai su Sito Web e poi Scelta Layout</p>
+ <p><label>Non visualizzare più questo messaggio <input type="checkbox" value="1" id="benvenutomostra" onchange="stopbenvenuto()"></label><p>
+ <p align="right" style="cursor:pointer" onclick="document.getElementById('benvenutowndw').style.display='none'">Chiudi <strong>X</strong></p>
+
+</div>
+</div>-->
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix" style="animation-duration: 1.5s; opacity: 1;">
+
+        <!-- Header
+        ============================================= -->
+        <header id="header" class="transparent-header semi-transparent full-header no-sticky">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo">
+
+                        <a href="https://www.lalunachevuoi.it/" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
+                        <a href="https://www.lalunachevuoi.it/" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
+
+                                        </div><!-- #logo end -->
+
+                    <!-- Language switch
+                    ============================================= -->
+                   <div id="top-search" class="languageswitcher">
+
+                            <select id="lingua" onchange="SwitchLanguage()" style="max-width:150px; padding:4px; background-color:transparent; border-radius: 3px; border:solid #CCC thin">
+                                <option value="it" selected="selected">IT</option>
+                                <option value="en">EN</option>
+                            </select>
+
+
+                    </div><!-- #language end -->
+
+                    <!-- Primary Navigation
+                    ============================================= -->
+                    <nav id="primary-menu">
+                     <ul class="sf-js-enabled" style="touch-action: pan-y;">
+     <li class="current"><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/home?demo=1">Home</a></li>
+
+
+     <li><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/listanozze?demo=1">Lista Nozze</a></li>
+
+
+     <li><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/eventi?demo=1">Eventi</a></li>
+
+
+     <li><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/pagine/RSVP?demo=1">RSVP</a></li>
+
+
+     <li><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/hotels?demo=1">Hotel</a></li>
+
+	<li class="sub-menu"><a href="#" style="pointer-events: none" class="sf-with-ul">Altro</a><ul style="display: none;" class="menu-pos-invert">
+     <li><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/fotosposi?demo=1">Galleria</a></li>
+
+
+     <li><a href="https://www.lalunachevuoi.it/lista-viaggio-nozze/it/lunablog?demo=1">Blog</a></li>
+
+	</ul></li>   </ul>
+
+
+
+                    </nav><!-- #primary-menu end -->
+
+                </div>
+
+            </div>
+
+        </header><!-- #header end -->
+
+
+
+        <section id="slider" class="slider-parallax swiper_wrapper full-screen force-full-screen clearfix" style="height: 695px; transform: translate(0px, 0px);">
+
+            <div class="swiper-container swiper-parent" style="cursor: -webkit-grab;">
+                <div class="swiper-wrapper" style="width: 3115.2px; height: 500px;">
+                    <div class="swiper-slide dark swiper-slide-visible swiper-slide-active" style="background-image: url(&quot;https://www.lalunachevuoi.it/UserDocuments/wedding101/Layout-pagina/Clear/mainimg1/Lista-nozze-online__1481907878.jpg?v=306388497&quot;); width: 1038.4px; height: 695px;">
+                        <div class="container clearfix">
+                            <div class="slider-caption slider-caption-center" style="transform: translate(0px, 0px); opacity: 2.22222; top: 300.5px;">
+                                <h2 id="titolo1" data-caption-animate="fadeInUp" class="fadeInUp animated"><span style="color:#FFFFFF">ANDREMO ALLE MALDIVE!</span></h2>
+                                <p data-caption-animate="fadeInUp" data-caption-delay="200" class="fadeInUp animated"><span id="testo1"><span style="\\\'color:#0099cc\\\'"><strong>E voi ci aiuterete ad arrivarci</strong></span></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide dark" style="background-image: url(&quot;https://www.lalunachevuoi.it/UserDocuments/wedding101/Layout-pagina/Clear/mainimg2/Lista-nozze-online__1481908325.jpg?v=1570191480&quot;); width: 1038.4px; height: 695px;">
+                        <div class="container clearfix">
+                            <div class="slider-caption slider-caption-center" style="transform: translate(0px, 0px); opacity: 2.22222; top: 300.5px;">
+                                <h2 id="titolo1" data-caption-animate="fadeInUp" class="fadeInUp animated"><span style="color:#FFFFFF">ANDREMO ALLE MALDIVE!</span></h2>
+                                <p data-caption-animate="fadeInUp" data-caption-delay="200" class="fadeInUp animated"><span id="testo1"><span style="\\\'color:#0099cc\\\'"><strong>E voi ci aiuterete ad arrivarci</strong></span></span></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide dark" style="background-image: url(&quot;https://www.lalunachevuoi.it/UserDocuments/wedding101/Layout-pagina/Clear/mainimg3/Lista-nozze-online__1481908390.jpg?v=473472069&quot;); background-position: center top; width: 1038.4px; height: 695px;">
+                        <div class="container clearfix">
+                            <div class="slider-caption slider-caption-center" style="transform: translate(0px, 0px); opacity: 2.22222; top: 300.5px;">
+                                <h2 id="titolo1" data-caption-animate="fadeInUp" class="fadeInUp animated"><span style="color:#FFFFFF">ANDREMO ALLE MALDIVE!</span></h2>
+                                <p data-caption-animate="fadeInUp" data-caption-delay="200" class="fadeInUp animated"><span id="testo1"><span style="\\\'color:#0099cc\\\'"><strong>E voi ci aiuterete ad arrivarci</strong></span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+                <div id="slider-arrow-left" style="opacity: 2.22222;"><i class="icon-angle-left"></i></div>
+                <div id="slider-arrow-right" style="opacity: 2.22222;"><i class="icon-angle-right"></i></div>
+                <div id="slide-number"><div id="slide-number-current">1</div><span>/</span><div id="slide-number-total">3</div></div>
+            </div>
+
+            <script>
+                jQuery(document).ready(function($){
+                    var swiperSlider = new Swiper('.swiper-parent',{
+                        paginationClickable: false,
+                        slidesPerView: 1,
+                        grabCursor: true,
+                        onSwiperCreated: function(swiper){
+                            $('[data-caption-animate]').each(function(){
+                                var $toAnimateElement = $(this);
+                                var toAnimateDelay = $(this).attr('data-caption-delay');
+                                var toAnimateDelayTime = 0;
+                                if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ) + 750; } else { toAnimateDelayTime = 750; }
+                                if( !$toAnimateElement.hasClass('animated') ) {
+                                    $toAnimateElement.addClass('not-animated');
+                                    var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+                                    setTimeout(function() {
+                                        $toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
+                                    }, toAnimateDelayTime);
+                                }
+                            });
+                            SEMICOLON.slider.swiperSliderMenu();
+                        },
+                        onSlideChangeStart: function(swiper){
+                            $('#slide-number-current').html(swiper.activeIndex + 1);
+                            $('[data-caption-animate]').each(function(){
+                                var $toAnimateElement = $(this);
+                                var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+                                $toAnimateElement.removeClass('animated').removeClass(elementAnimation).addClass('not-animated');
+                            });
+                            SEMICOLON.slider.swiperSliderMenu();
+                        },
+                        onSlideChangeEnd: function(swiper){
+                            $('#slider .swiper-slide').each(function(){
+                                if($(this).find('video').length > 0) { $(this).find('video').get(0).pause(); }
+                            });
+                            $('#slider .swiper-slide:not(".swiper-slide-active")').each(function(){
+                                if($(this).find('video').length > 0) {
+                                    if($(this).find('video').get(0).currentTime != 0 ) $(this).find('video').get(0).currentTime = 0;
+                                }
+                            });
+                            if( $('#slider .swiper-slide.swiper-slide-active').find('video').length > 0 ) { $('#slider .swiper-slide.swiper-slide-active').find('video').get(0).play(); }
+
+                            $('#slider .swiper-slide.swiper-slide-active [data-caption-animate]').each(function(){
+                                var $toAnimateElement = $(this);
+                                var toAnimateDelay = $(this).attr('data-caption-delay');
+                                var toAnimateDelayTime = 0;
+                                if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ) + 300; } else { toAnimateDelayTime = 300; }
+                                if( !$toAnimateElement.hasClass('animated') ) {
+                                    $toAnimateElement.addClass('not-animated');
+                                    var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+                                    setTimeout(function() {
+                                        $toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
+                                    }, toAnimateDelayTime);
+                                }
+                            });
+                        }
+                    });
+
+                    $('#slider-arrow-left').on('click', function(e){
+                        e.preventDefault();
+                        swiperSlider.swipePrev();
+                    });
+
+                    $('#slider-arrow-right').on('click', function(e){
+                        e.preventDefault();
+                        swiperSlider.swipeNext();
+                    });
+
+                    $('#slide-number-current').html(swiperSlider.activeIndex + 1);
+                    $('#slide-number-total').html(swiperSlider.slides.length);
+                });
+            </script>
+
+        </section>
+               <!-- Footer
+        ============================================= -->
+        <footer id="footer" class="dark">
+
+            <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights">
+
+                <div class="container clearfix">
+
+                   <div class="col-xs-12">
+					<div class="text-center">
+                        <div class="row"><div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:10px"><strong><a target="_blank" href="https://www.lalunachevuoi.it">Lalunachevuoi.it</a></strong>, la scelta di Nicola e Luna per il loro matrimonio<!--<br>Per tutte le altre occasioni c'&egrave <a href='http://www.wishon.it'>WishOn.it</a>--></div><div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:10px; text-align:center"><strong>Supporto</strong><br><a>support@lalunachevuoi.it</a> </div></div>					</div>
+                    </div>
+
+				   <div class="clear"></div>
+               </div>
+
+            </div><!-- #copyrights end -->
+
+        </footer><!-- #footer end -->
+
+    </div><!-- #wrapper end -->
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script type="text/javascript" src="js/functions.js"></script>
+
+
+
+
+
+</body></html>
